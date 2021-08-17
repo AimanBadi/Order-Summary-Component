@@ -16,7 +16,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background: url(/images/pattern-background-desktop.svg) no-repeat;
+  background: url(/images/pattern-background-mobile.svg) no-repeat;
   background-size: 100vmax;
   background-color: hsl(225, 100%, 98%);
   display: flex;
@@ -110,5 +110,13 @@ body {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-size: 100vmax;
+    background-color: hsl(225, 100%, 98%);
   }
 }
